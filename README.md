@@ -28,3 +28,6 @@ https://synthetichealth.github.io
 * LLM pain points: transparency, trust, accuracy, privacy, cost reduction, ethics
 
 ## Learning resources
+
+* Monitoring
+    * https://github.com/whylabs/langkit
