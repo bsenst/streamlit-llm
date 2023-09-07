@@ -29,5 +29,8 @@ https://synthetichealth.github.io
 
 ## Learning resources
 
+* Prompting
+    * https://langchain.readthedocs.io/en/latest/
 * Monitoring
     * https://github.com/whylabs/langkit
+    * https://arize.com/llm/
