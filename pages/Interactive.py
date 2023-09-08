@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-from utils import tools
+from utils.tools import load_data
 
 from langchain.llms import Clarifai
 from langchain.llms.fake import FakeListLLM
