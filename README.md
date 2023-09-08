@@ -19,7 +19,8 @@ https://synthetichealth.github.io
 * Interpret measurements with context (age, gender)
 * Different national diagnostic criteria
 * Preserving privacy while interacting with LLMs
-* Parse LLM output 
+* Parse LLM output
+* Warning labels
 
 ## Reading list
 

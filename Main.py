@@ -2,6 +2,8 @@ import os
 import pandas as pd
 import streamlit as st
 
+from tools import load_data
+
 title = "LLM supported Observations"
 
 st.set_page_config(
@@ -15,14 +17,9 @@ st.set_page_config(
     }
 )
 
-@st.cache_data
-def load_data():
-    observations = pd.read_csv("notebooks/csv/observations_processed.csv")
-    responses = pd.read_csv("notebooks/csv/observations_responses.csv", sep="#")
-    return observations, responses
-
 # Create a Streamlit app
 st.title(title)
+st.caption("This is a static example. For the interactive application go to live.")
 
 observations, responses = load_data()
 

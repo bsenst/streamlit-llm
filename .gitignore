@@ -1,2 +1,4 @@
 notebooks/synthea_sample_data_csv_apr2020.zip
 .streamlit
+*/__init__.py
+*/__pycache__
