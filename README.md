@@ -13,6 +13,14 @@ Prompt chaining with LangChain
 
 https://synthetichealth.github.io
 
+## Discussion & ToDo
+
+* Consider changes of values over time instead of interpreting each time point individually
+* Interpret measurements with context (age, gender)
+* Different national diagnostic criteria
+* Preserving privacy while interacting with LLMs
+* Parse LLM output 
+
 ## Reading list
 
 * https://streamlit.io/community/llm-hackathon-2023
