@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import streamlit as st
 
-from tools import load_data
+from utils.tools import load_data
 
 title = "LLM supported Observations"
 
