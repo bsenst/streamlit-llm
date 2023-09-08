@@ -10,7 +10,7 @@ from langchain.output_parsers import CommaSeparatedListOutputParser
 
 st.title("Interactive")
 
-observations, responses = tools.load_data()
+observations, responses = load_data()
 
 # Initialization
 if 'lines' not in st.session_state:
