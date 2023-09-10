@@ -11,6 +11,8 @@ https://experimental-clinical-support.streamlit.app/
 
 ### Architecture
 
+![app-architecture-image](https://github.com/bsenst/streamlit-llm/assets/8211411/7a5652b0-e56a-4d4e-b3ce-b8fb676c76b9)
+
 * Streamlit caching loaded Synthea synthetic medical data
 * Prompting with LangChain PromptTemplate
 * LLM served by Clarifai backend
