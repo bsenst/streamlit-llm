@@ -1,16 +1,23 @@
 # streamlit-llm
 
-## Architecture
+## About the application
+
+The purpose of this application is to test LLM-generated interpretations of medical observations. 
+The explanations are generated fully automatically by a large language model. 
+This application should be used for experimental purposes only. 
+It does not provide support for real world cases and does not replace advice from medical professionals.
+
+### Architecture
 
 * Streamlit caching
 * Prompting with LangChain
 * LLM backend with Clarifai
 
-## Run the app
+### Run the app
 
 `streamlit run Main.py`
 
-## Data source
+### Data source
 
 https://synthetichealth.github.io
 
@@ -32,7 +39,7 @@ https://synthetichealth.github.io
 * https://streamlit.io/community/llm-hackathon-2023
 * https://discuss.streamlit.io/t/streamlit-llm-hackathon/50618
 
-## Evaluation criteria
+### Evaluation criteria
 
 * Inventive
 * Error-free
