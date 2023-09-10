@@ -30,7 +30,7 @@ if all([value%1==0 for value in observations_filtered.VALUE]):
     value_median = int(values.median())
 else:
     values = observations_filtered.VALUE
-    value_median = values.median()
+    value_median = values.mean()
 value_min = values.min()
 value_max = values.max()
 value = st.slider("Value", min_value=value_min, max_value=value_max, value=value_median)

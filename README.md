@@ -11,19 +11,22 @@ https://experimental-clinical-support.streamlit.app/
 
 ### Architecture
 
-* Streamlit caching
-* Prompting with LangChain
-* LLM backend with Clarifai
+* Streamlit caching loaded Synthea synthetic medical data
+* Prompting with LangChain PromptTemplate
+* LLM served by Clarifai backend
 
 ### Run the app
 
-`streamlit run Main.py`
+```
+pip install -r requirements.txt
+streamlit run Main.py
+```
 
 ### Data source
 
 https://synthetichealth.github.io
 
-## Discussion & ToDo
+## Discussion
 
 * Consider changes of values over time instead of interpreting each time point individually
 * Interpret measurements with context (age, gender)
@@ -31,6 +34,14 @@ https://synthetichealth.github.io
 * Preserving privacy while interacting with LLMs
 * Parse LLM output and process for further queries
 * Warning labels according to clinical significance of the results
+* Guardrails to guide user input
+
+### Prompt engineering
+
+* Better prompts = better LLM results https://learnprompting.org/docs/basics/prompt_engineering#what-happens-when-a-prompt-doesnt-work
+* Instruction prompts https://learnprompting.org/docs/basics/instructions
+* Assigning roles https://learnprompting.org/docs/basics/roles
+* Few-shot prompt vs instruction prompt https://learnprompting.org/docs/basics/few_shot#more-on-structure
 
 ### Problem: Hallucinations
 
@@ -54,6 +65,7 @@ https://synthetichealth.github.io
 
 * Prompting
     * https://langchain.readthedocs.io/en/latest/
+    * https://learnprompting.org/
 * Monitoring
     * https://github.com/whylabs/langkit
     * https://arize.com/llm/
