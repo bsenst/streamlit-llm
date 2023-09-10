@@ -64,6 +64,8 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 client = redis.Redis(host=st.secrets.REDIS_HOST, port=st.secrets.REDIS_PORT, db=st.secrets.REDIS_DB, password=st.secrets.REDIS_PASSWORD)
 
 if st.button("Submit"):
+    st.write(observations_selected)
+
     st.session_state["output"] = llm_chain.run(", ".join(observations_selected))
     st.write(st.session_state["output"])
 
