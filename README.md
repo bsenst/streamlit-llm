@@ -2,8 +2,9 @@
 
 ## Architecture
 
-Streamlit caching
-Prompt chaining with LangChain
+* Streamlit caching
+* Prompting with LangChain
+* LLM backend with Clarifai
 
 ## Run the app
 
@@ -17,16 +18,16 @@ https://synthetichealth.github.io
 
 * Consider changes of values over time instead of interpreting each time point individually
 * Interpret measurements with context (age, gender)
-* Different national diagnostic criteria
+* Consider different national diagnostic criteria
 * Preserving privacy while interacting with LLMs
-* Parse LLM output
+* Parse LLM output and process for further queries
 * Warning labels according to clinical significance of the results
 
-### Hallucinations
+### Problem: Hallucinations
 
 > Respiratory rate: This is the number of breaths a person takes per minute. A normal respiratory rate for an adult at rest is between 12 and 20 breaths per minute. In this case, the patient's respiratory rate is 14 breaths per minute, which is slightly higher than normal.
 
-## Reading list
+## Hackathon resources
 
 * https://streamlit.io/community/llm-hackathon-2023
 * https://discuss.streamlit.io/t/streamlit-llm-hackathon/50618
