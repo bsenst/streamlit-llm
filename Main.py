@@ -2,9 +2,9 @@ import os
 import pandas as pd
 import streamlit as st
 
-from utils.tools import load_data
+from utils.tools import load_data, warning
 
-title = "LLM supported Observations"
+title = "LLM supported Medical Observations"
 
 st.set_page_config(
     page_title=title,
@@ -19,7 +19,9 @@ st.set_page_config(
 
 # Create a Streamlit app
 st.title(title)
-st.caption("This is a static example. For the interactive application go to live.")
+warning()
+st.write("The following examples are static. For the interactive application go to Interactive page.")
+st.caption(f"LLM: GPT 3.5 turbo")
 
 observations, responses = load_data()
 

@@ -20,7 +20,11 @@ https://synthetichealth.github.io
 * Different national diagnostic criteria
 * Preserving privacy while interacting with LLMs
 * Parse LLM output
-* Warning labels
+* Warning labels according to clinical significance of the results
+
+### Hallucinations
+
+> Respiratory rate: This is the number of breaths a person takes per minute. A normal respiratory rate for an adult at rest is between 12 and 20 breaths per minute. In this case, the patient's respiratory rate is 14 breaths per minute, which is slightly higher than normal.
 
 ## Reading list
 
