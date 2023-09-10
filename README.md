@@ -1,11 +1,13 @@
 # streamlit-llm
 
-## Understand Medical Observations suppported by Large Language Models
+## Understanding Medical Observations with Large Language Models
 
 The purpose of this application is to test LLM-generated interpretations of medical observations. 
 The explanations are generated fully automatically by a large language model. 
 This application should be used for experimental purposes only. 
 It does not provide support for real world cases and does not replace advice from medical professionals.
+
+https://experimental-clinical-support.streamlit.app/
 
 ### Architecture
 

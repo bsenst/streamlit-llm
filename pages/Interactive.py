@@ -41,6 +41,8 @@ observations_selected = st.multiselect(
     st.session_state.lines,
     default=st.session_state.lines)
 
+st.session_state["lines"] = observations_selected
+
 template = """A patient has the following list of observations: {observations_selected}\n
 Explain the observations in simple language: """
 

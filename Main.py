@@ -20,7 +20,7 @@ st.set_page_config(
 # Create a Streamlit app
 st.title(title)
 warning()
-st.write("The following examples are static. For the interactive application go to Interactive page.")
+st.write("The following examples are static. For the interactive application go to the Interactive page.")
 st.caption(f"LLM: GPT 3.5 turbo")
 
 observations, responses = load_data()
