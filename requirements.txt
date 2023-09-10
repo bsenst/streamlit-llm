@@ -2,3 +2,5 @@ langchain
 pandas
 streamlit
 clarifai
+redis
+streamlit_feedback

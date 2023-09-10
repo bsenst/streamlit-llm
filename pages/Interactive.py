@@ -7,6 +7,11 @@ from langchain.llms import Clarifai
 from langchain.llms.fake import FakeListLLM
 from langchain import PromptTemplate, LLMChain
 
+import uuid
+import redis
+from redis.commands.json.path import Path
+from streamlit_feedback import streamlit_feedback
+
 st.title("Interactive")
 warning()
 st.caption(f"LLM: {st.secrets.MODEL_ID}")
@@ -54,11 +59,23 @@ prompt = PromptTemplate(
 llm = Clarifai(pat=st.secrets.CLARIFAI_PAT, user_id=st.secrets.USER_ID, app_id=st.secrets.APP_ID, model_id=st.secrets.MODEL_ID)
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
+client = redis.Redis(host=st.secrets.REDIS_HOST, port=st.secrets.REDIS_PORT, db=st.secrets.REDIS_DB, password=st.secrets.REDIS_PASSWORD)
+
 if st.button("Submit"):
     st.session_state["output"] = llm_chain.run(", ".join(observations_selected))
     st.write(st.session_state["output"])
 
+    st.caption("Give feedback to let us know what you think. This includes the observations and LLM-output.")
+    st.session_state["feedback"] = streamlit_feedback(
+        feedback_type="thumbs",
+        align="flex-start",
+    )
+    
+    if st.session_state["feedback"]:
+        st.session_state["feedback"]["text"] = f'{st.session_state["lines"]}|{st.session_state["output"]}'
+        client.json().set(f'user:{uuid.uuid4()}', '$', st.session_state["feedback"])
+
 if st.button("Reload"):
-    st.session_state["lines"] = []
-    st.session_state["output"] = ""
+    for key in st.session_state.keys():
+        del st.session_state[key]
     st.experimental_rerun()
