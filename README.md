@@ -11,7 +11,7 @@ https://experimental-clinical-support.streamlit.app/
 
 ### Architecture
 
-![app-architecture-image](https://github.com/bsenst/streamlit-llm/assets/8211411/7a5652b0-e56a-4d4e-b3ce-b8fb676c76b9)
+![app-architecture-image](https://github.com/bsenst/streamlit-llm/assets/8211411/d5bc2063-b5fb-43ad-9220-8c5d16954024)
 
 * Streamlit caching loaded Synthea synthetic medical data
 * Prompting with LangChain PromptTemplate
