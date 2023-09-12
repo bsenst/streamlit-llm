@@ -44,6 +44,10 @@ https://synthetichealth.github.io
 * Instruction prompts https://learnprompting.org/docs/basics/instructions
 * Assigning roles https://learnprompting.org/docs/basics/roles
 * Few-shot prompt vs instruction prompt https://learnprompting.org/docs/basics/few_shot#more-on-structure
+* CoT Chain-of-Thought https://learnprompting.org/docs/intermediate/chain_of_thought
+* Ensembling
+    * AMA https://learnprompting.org/docs/reliability/ensembling#ask-me-anything-ama-prompting
+    * Diverse Verifier on Reasoning Steps https://learnprompting.org/docs/reliability/ensembling#diverse
 
 ### Problem: Hallucinations
 
@@ -69,6 +73,8 @@ https://synthetichealth.github.io
 
 ## Learning resources
 
+* LLM
+    * https://aiplanet.com/learn/llm-bootcamp
 * Prompting
     * https://langchain.readthedocs.io/en/latest/
     * https://learnprompting.org/
