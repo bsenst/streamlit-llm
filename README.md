@@ -48,6 +48,7 @@ https://synthetichealth.github.io
 * Ensembling
     * AMA https://learnprompting.org/docs/reliability/ensembling#ask-me-anything-ama-prompting
     * Diverse Verifier on Reasoning Steps https://learnprompting.org/docs/reliability/ensembling#diverse
+* Calibration https://learnprompting.org/docs/reliability/calibration
 
 ### Problem: Hallucinations
 
@@ -78,6 +79,7 @@ https://synthetichealth.github.io
 * Prompting
     * https://langchain.readthedocs.io/en/latest/
     * https://learnprompting.org/
+    * https://apps.cognitiveclass.ai/learning/course/course-v1:IBMSkillsNetwork+AI0117EN+v1
 * Monitoring
     * https://github.com/whylabs/langkit
     * https://arize.com/llm/
