@@ -1,6 +1,6 @@
-langchain
 pandas
 streamlit
 clarifai
+langchain
 redis
 streamlit_feedback
