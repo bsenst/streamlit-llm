@@ -3,6 +3,8 @@ import streamlit as st
 
 from utils.tools import load_data, warning
 
+import clarifai
+
 from langchain.llms import Clarifai
 from langchain.llms.fake import FakeListLLM
 from langchain import PromptTemplate, LLMChain
