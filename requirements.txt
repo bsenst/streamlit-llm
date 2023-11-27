@@ -1,6 +1,6 @@
 langchain
 pandas
 streamlit
-clarifai==2.6.2
+clarifai
 redis
 streamlit_feedback
